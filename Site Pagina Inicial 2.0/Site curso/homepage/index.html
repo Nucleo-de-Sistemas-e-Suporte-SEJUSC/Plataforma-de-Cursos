@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Cursos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div class="container">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">
+        <img src="/Images/sicad.png" alt="Logo do site" class="sicad">
+      </a>
+    </div>
+
+    <!-- LINKS CENTRALIZADOS -->
+    <nav class="nav-center">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">Home</a>
+      <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html">Cursos</a>
+      <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html">Sobre</a>
+    </nav>
+
+    <!-- USUÁRIO -->
+    <div class="user-menu">
+      <div class="user-name" onclick="toggleDropdown()">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone do usuário" class="user-icon">
+        <span>Olá, Maria</span>
+      </div>
+      <div class="dropdown" id="dropdown">
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+ <!-- Carrossel Hero -->
+<section class="hero-carousel">
+  <div class="carousel-container">
+    <!-- Slide 1 -->
+    <div class="hero-slide active">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Comece agora!</h1>
+          <p>Aprenda de forma simples, rápida e objetiva.</p>
+          <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html">
+            <button>Pesquisar Cursos</button>
+          </a>
+        </div>
+        <div class="hero-image">
+          <img src="/Images/sicadiconpng.png" alt="Imagem do Curso" class="iconbanner">
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Explore novos caminhos!</h1>
+          <p>Obtenha novos conhecimentos com nossos cursos online.</p>
+          <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html"><button>Ver Catálogo</button></a>
+        </div>
+        <div class="hero-image">
+          <img src="/Images/sicadiconpng.png" alt="Cursos Online" class="iconbanner">
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Quer começar a programar em Python?</h1>
+          <p>Domine novas habilidades com nossos cursos online do zero!</p>
+          <a href="http://127.0.0.1:3000/Site%20curso/CursepageBackend/indexpy.html"><button>Começar Agora </button></a>
+        </div>
+        <div class="hero-image">
+          <img src="/Images/sicadiconpng.png" alt="Cursos Online" class="iconbanner">
+        </div>
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+  <!-- Categorias -->
+  <section class="categorias">
+    <div class="container">
+      <h2>Categorias</h2>
+      <div class="botoes-categorias">
+        <a href="http://127.0.0.1:3000/Site curso/CategoriaInformatica/Informatica.html"><button>Informática</button></a>
+        <a href="http://127.0.0.1:3000/Site curso/CategoriaTutoriais/Tutoriais.html"><button>Tutoriais</button></a>
+        <a href="http://127.0.0.1:3000/Site curso/CategoriaRedes/Redes.html"><button>Redes</button></a>
+        <a href="http://127.0.0.1:3000/Site curso/CategoriaAdm/Adm.html"><button>Administração</button></a>
+        <a href="http://127.0.0.1:3000/Site curso/CategoriaDados/dados.html"><button>Dados</button></a>
+        <a href="http://127.0.0.1:3000/Site curso/Outros/outros.html"><button>Outros</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lista de Cursos -->
+  <section class="cursos">
+    <div class="container">
+      <h2>Cursos Rápidos e Fáceis</h2>
+      <div class="grid-cursos">
+        <!-- Repetição dos cards -->
+        <div class="card" style="cursor: pointer;">
+          <a href="http://127.0.0.1:3000/Site%20curso/CursepageBackend/indexpy.html"><img src="/Images/plano-de-fundo-de-programacao-com-pessoa-trabalhando-com-codigos-no-computador.jpg">
+          <h3>Back-end em Python</h3>
+          <p>Informática • 20h</p>
+          </a>
+        </div>
+
+        <div class="card" style="cursor: pointer;">
+          <a href="http://127.0.0.1:3000/Site curso/CursepageGestão/Gestão.html">
+          <img src="/Images/assinatura-de-mulheres-empresariais-no-documento.jpg" alt="Curso">
+          <h3>Gestão de Negócios</h3>
+          <p>Administração • 10h</p>
+          </a>
+        </div>
+
+        <div class="card" style="cursor: pointer;">
+          <a href="http://127.0.0.1:3000/Site curso/CursepageRedes/Redes.html">
+          <img src="/Images/empregados-trabalhando-juntos-vista-lateral.jpg" alt="Curso">
+          <h3>Redes do zero</h3>
+          <p>Redes • 45h</p>
+          </a>
+        </div>
+
+        <div class="card" style="cursor: pointer;">
+          <a href="http://127.0.0.1:3000/Site curso/CursopageANYdesk/index3.html"><img src="/Images/download.png" >
+          <h3>Como instalar o Anydesk</h3>
+          <p>Tutorial • 10min</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Texto Motivacional -->
+  <section class="motivacional">
+    <div class="container motivacional-content">
+      <div>
+        <h2>Continue estudando!</h2>
+        <p>Não desista! Aprender é um processo.</p>
+        <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html"><button>Saiba Mais</button></a>
+      </div>
+      <img src="/Images/Indice-sejusc.png" alt="Motivacional">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SICAD Todos os direitos reservados.</p>
+    </div>
+  </footer>
+<script src="/Site curso/homepage/script.js"></script>
+</body>
+</html>

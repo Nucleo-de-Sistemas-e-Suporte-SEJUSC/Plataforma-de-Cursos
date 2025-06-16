@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Back-end em Python</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+  <header>
+  <div class="container">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">
+        <img src="/Images/sicad.png" alt="Logo do site" class="sicad">
+      </a>
+    </div>
+
+    <!-- LINKS CENTRALIZADOS -->
+    <nav class="nav-center">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">Home</a>
+      <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html">Cursos</a>
+      <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html">Sobre</a>
+    </nav>
+
+    <!-- USUÁRIO -->
+    <div class="user-menu">
+      <div class="user-name" onclick="toggleDropdown()">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone do usuário" class="user-icon">
+        <span>Olá, Maria</span>
+      </div>
+      <div class="dropdown" id="dropdown">
+        <a href="#" onclick="logout(); return false;">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Página do Curso -->
+<main class="container">
+  <h1>Back-end em Python</h1>
+
+  <div class="course-main">
+    <!-- Vídeo + Informações -->
+    <div class="video-section">
+      <div class="video-player">
+        <!-- vídeo -->
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/g_R_Asf6Co0?si=BSuQwfBgkecejuBN" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+      </div>
+     
+      </div>
+    </div>
+
+    <p class="course-description">
+      Neste video contem a introdução sobre Back-end em Python.
+    </p>
+
+    <!-- Conteúdo Escrito -->
+    <section class="tutorial-text">
+      <h2>Introdução ao Back-End com Python</h2>
+      <ol>
+        <li>
+          <strong>Introdução</strong>
+          <p>O back-end é a parte de um sistema web responsável pela lógica, armazenamento de dados e comunicação com o front-end. É onde o site ou aplicação "pensa" e toma decisões.<br>
+
+O Python é uma das linguagens mais populares para desenvolvimento back-end, graças à sua simplicidade, leitura clara e grande ecossistema de bibliotecas. Ele permite criar APIs, gerenciar bancos de dados, autenticação de usuários, envio de e-mails, e muito mais.</p>
+          
+        </li>
+        <li>
+          <strong>  Principais ferramentas de back-end com Python:</strong>
+          <p>Flask – Microframework leve e flexível, ideal para projetos pequenos e médios.<br><br>
+
+Django – Framework robusto e completo, com muitos recursos prontos para uso (admin, autenticação, ORM).<br><br>
+
+FastAPI – Framework moderno e muito rápido, ideal para APIs com alta performance.</p>
+        </li>
+        <li>
+          <strong>Exemplos de uso do back-end com Python:</strong>
+          <p>Criar uma API que retorna dados de um banco de dados para o front-end.<br>
+
+Validar login e senha de usuários.<br>
+
+Salvar formulários enviados por um site.<br>
+
+Integrar com serviços externos (como pagamento ou redes sociais).</p>
+        </li>
+        
+      </ol>
+    </section>
+  </div>
+
+  <!-- Lateral: Reassistir -->
+  <aside class="sidebar">
+    <h3>Other videos</h3>
+    <ul>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+    </ul>
+  </aside>
+</main>
+
+
+
+
+   <!-- Texto Motivacional -->
+  <section class="motivacional">
+    <div class="container motivacional-content">
+      <div>
+        <h2>Continue estudando!</h2>
+        <p>Não desista! Aprender é um processo.</p>
+        <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html"><button>Saiba Mais</button></a>
+      </div>
+      <img src="/Images/Indice-sejusc.png" alt="Motivacional">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CursosFáceis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

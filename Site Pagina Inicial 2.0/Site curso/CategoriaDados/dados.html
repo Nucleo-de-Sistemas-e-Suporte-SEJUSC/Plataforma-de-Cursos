@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+  <div class="container">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">
+        <img src="/Images/sicad.png" alt="Logo do site" class="sicad">
+      </a>
+    </div>
+
+    <!-- LINKS CENTRALIZADOS -->
+    <nav class="nav-center">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">Home</a>
+      <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html">Cursos</a>
+      <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html">Sobre</a>
+    </nav>
+
+    <!-- USUÁRIO -->
+    <div class="user-menu">
+      <div class="user-name" onclick="toggleDropdown()">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone do usuário" class="user-icon">
+        <span>Olá, Maria</span>
+      </div>
+      <div class="dropdown" id="dropdown">
+        <a href="#" onclick="logout(); return false;">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="container">
+  <main class="search-page">
+    <section class="search-header">
+      <h1>Dados</h1>
+      <p>Parece que ainda não tem nada por aqui...</p>
+    </section>
+
+    <section class="search-results">
+      <div class="results-list">
+        <!-- Card de curso -->
+
+
+        
+      </div>
+
+      <aside class="reassistir">
+        <h4></h4>
+        <ul>
+         
+          
+        </ul>
+      </aside>
+    </section>
+
+
+
+    <!-- Texto Motivacional -->
+  <section class="motivacional">
+    <div class="container motivacional-content">
+      <div>
+        <h2>Continue estudando!</h2>
+        <p>Não desista! Aprender é um processo.</p>
+        <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html"><button>Saiba Mais</button></a>
+      </div>
+      <img src="/Images/Indice-sejusc.png" alt="Motivacional">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CursosFáceis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+<script type="module" src="../../script.js"></script>
+</html>

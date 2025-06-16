@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Redes do zero</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+  <header>
+  <div class="container">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">
+        <img src="/Images/sicad.png" alt="Logo do site" class="sicad">
+      </a>
+    </div>
+
+    <!-- LINKS CENTRALIZADOS -->
+    <nav class="nav-center">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">Home</a>
+      <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html">Cursos</a>
+      <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html">Sobre</a>
+    </nav>
+
+    <!-- USUÁRIO -->
+    <div class="user-menu">
+      <div class="user-name" onclick="toggleDropdown()">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone do usuário" class="user-icon">
+        <span>Olá, Maria</span>
+      </div>
+      <div class="dropdown" id="dropdown">
+        <a href="#" onclick="logout(); return false;">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Página do Curso -->
+<main class="container">
+  <h1>Redes do Zero</h1>
+
+  <div class="course-main">
+    <!-- Vídeo + Informações -->
+    <div class="video-section">
+      <div class="video-player">
+        <!-- vídeo -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QkMbqL8QD9w?si=oDeZZ6ZjeD3PzCJq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+     
+      </div>
+    </div>
+
+    <p class="course-description">
+      Neste video contem a introdução sobre Redes.
+    </p>
+
+    <!-- Conteúdo Escrito -->
+    <section class="tutorial-text">
+      <h2>Introdução ao Curso de Redes</h2>
+          <p>O Curso de Redes de Computadores tem como objetivo capacitar os participantes nos princípios, técnicas e práticas essenciais para o planejamento, implantação e manutenção de redes de comunicação de dados.<br>
+
+Durante o curso, os alunos aprenderão desde os conceitos básicos — como tipos de redes, topologias e protocolos — até temas mais avançados, como endereçamento IP, configuração de roteadores e switches, segurança de redes, e serviços de internet. O conteúdo é alinhado às demandas reais do mercado e às exigências da transformação digital nas organizações.
+<br>
+Com uma abordagem teórico-prática, o curso prepara profissionais para atuar com infraestrutura de redes, suporte técnico, administração de sistemas e segurança da informação, sendo uma excelente base para certificações e para atuação em ambientes corporativos e públicos.
+
+</p>
+    </section>
+  </div>
+
+  <!-- Lateral: Reassistir -->
+  <aside class="sidebar">
+    <h3>Other videos</h3>
+    <ul>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+    </ul>
+  </aside>
+</main>
+
+
+
+
+   <!-- Texto Motivacional -->
+  <section class="motivacional">
+    <div class="container motivacional-content">
+      <div>
+        <h2>Continue estudando!</h2>
+        <p>Não desista! Aprender é um processo.</p>
+        <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html"><button>Saiba Mais</button></a>
+      </div>
+      <img src="/Images/Indice-sejusc.png" alt="Motivacional">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CursosFáceis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

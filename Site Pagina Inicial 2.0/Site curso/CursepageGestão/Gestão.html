@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Gestão de Negócios</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+  <header>
+  <div class="container">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">
+        <img src="/Images/sicad.png" alt="Logo do site" class="sicad">
+      </a>
+    </div>
+
+    <!-- LINKS CENTRALIZADOS -->
+    <nav class="nav-center">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">Home</a>
+      <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html">Cursos</a>
+      <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html">Sobre</a>
+    </nav>
+
+    <!-- USUÁRIO -->
+    <div class="user-menu">
+      <div class="user-name" onclick="toggleDropdown()">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone do usuário" class="user-icon">
+        <span>Olá, Maria</span>
+      </div>
+      <div class="dropdown" id="dropdown">
+        <a href="#" onclick="logout(); return false;">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Página do Curso -->
+<main class="container">
+  <h1>Gestão de Negócios</h1>
+
+  <div class="course-main">
+    <!-- Vídeo + Informações -->
+    <div class="video-section">
+      <div class="video-player">
+        <!-- vídeo -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/roy-pY7pmwM?si=-FDo0E8Ot6zyklQ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+     
+      </div>
+    </div>
+
+    <p class="course-description">
+      Neste video contem a introdução sobre Gestão de Negócios.
+    </p>
+
+    <!-- Conteúdo Escrito -->
+    <section class="tutorial-text">
+      <h2>Introdução ao Curso de Gestão</h2>
+          <p>O Curso de Gestão tem como objetivo desenvolver habilidades essenciais para a administração eficiente de recursos, pessoas e processos dentro de organizações públicas, privadas ou do terceiro setor.<br>
+
+Ao longo do curso, os participantes serão capacitados para tomar decisões estratégicas, liderar equipes, analisar indicadores de desempenho, além de compreender os principais conceitos de planejamento, organização, direção e controle — pilares da gestão moderna.<br>
+
+Com foco prático e alinhado às demandas atuais do mercado e da administração pública, o curso oferece ferramentas para uma gestão mais eficaz, ética e orientada por resultados, preparando os alunos para desafios reais no ambiente de trabalho</p>
+    </section>
+  </div>
+
+  <!-- Lateral: Reassistir -->
+  <aside class="sidebar">
+    <h3>Other videos</h3>
+    <ul>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+    </ul>
+  </aside>
+</main>
+
+
+
+
+   <!-- Texto Motivacional -->
+  <section class="motivacional">
+    <div class="container motivacional-content">
+      <div>
+        <h2>Continue estudando!</h2>
+        <p>Não desista! Aprender é um processo.</p>
+        <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html"><button>Saiba Mais</button></a>
+      </div>
+      <img src="/Images/Indice-sejusc.png" alt="Motivacional">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CursosFáceis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
