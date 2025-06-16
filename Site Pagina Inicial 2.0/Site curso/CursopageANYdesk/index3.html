@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+  <header>
+  <div class="container">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">
+        <img src="/Images/sicad.png" alt="Logo do site" class="sicad">
+      </a>
+    </div>
+
+    <!-- LINKS CENTRALIZADOS -->
+    <nav class="nav-center">
+      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">Home</a>
+      <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html">Cursos</a>
+      <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html">Sobre</a>
+    </nav>
+
+    <!-- USUÁRIO -->
+    <div class="user-menu">
+      <div class="user-name" onclick="toggleDropdown()">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone do usuário" class="user-icon">
+        <span>Olá, Maria</span>
+      </div>
+      <div class="dropdown" id="dropdown">
+        <a href="#" onclick="logout(); return false;">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Página do Curso -->
+<main class="container">
+  <h1>Como instalar o AnyDesk </h1>
+
+  <div class="course-main">
+    <!-- Vídeo + Informações -->
+    <div class="video-section">
+      <div class="video-player">
+        <!-- vídeo -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sBhO9KOebIg?si=Gk-DTsCn_BiWuKZh" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+     
+      </div>
+    </div>
+
+    <p class="course-description">
+      Neste video contem o passo a passo da instalação do AnyDesk .
+    </p>
+
+    <!-- Conteúdo Escrito -->
+    <section class="tutorial-text">
+      <h2>Tutorial escrito</h2>
+      <ol>
+        <li>
+          <strong> Acesse o site oficial</strong>
+          <p>Vá até o site: <a class="anydesk" target="_blank " href="https://anydesk.com"> AnyDesk </a> <br>
+           Clique no botão Download Now (Baixar agora) na página principal.</p>
+          <img src="/Images/download.png" />
+        </li>
+        <li>
+          <strong> Baixe o instalador</strong>
+          <p>O download do arquivo AnyDesk.exe será iniciado automaticamente.<br>
+            Salve o arquivo em um local de fácil acesso, como a Área de Trabalho.</p>
+        </li>
+        <li>
+          <strong>Execute o instalador</strong>
+          <p>Dê dois cliques no arquivo AnyDesk.exe.<br>
+            A interface principal será aberta instantaneamente (não precisa instalar para usar — é portátil).<br>
+            Para instalar permanentemente, clique em “Instalar AnyDesk no seu computador” no canto inferior direito.</p>
+        </li>
+        <li>
+          <strong>Siga o assistente de instalação</strong>
+          <p>Clique em Aceitar e Instalar.<br>
+            Se solicitado, permita que o programa faça alterações no seu computador (confirmação do Windows).</p>
+        </li>
+        <li>
+          <strong>Configuração inicial</strong>
+          <p>Após a instalação, o AnyDesk será aberto automaticamente.<br>
+            O seu endereço AnyDesk (número de identificação) aparecerá em destaque. É com ele que outras pessoas poderão se conectar ao seu computador (com sua autorização).</p>
+        </li>
+        <li>
+          <strong>Conexão remota</strong>
+          <p>Para se conectar a outro dispositivo, digite o número AnyDesk dele no campo “Outro posto de trabalho” e clique em Conectar.<br>
+            Para permitir que alguém acesse seu computador, compartilhe seu número e aceite a solicitação quando aparecer.
+
+</p>
+        </li>
+      </ol>
+    </section>
+  </div>
+
+  <!-- Lateral: Reassistir -->
+  <aside class="sidebar">
+    <h3>Other videos</h3>
+    <ul>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+      <li><img src="/Images/anydesk.jpg" /><span>Curso 1 – 30 min</span></li>
+    </ul>
+  </aside>
+</main>
+
+
+
+
+   <!-- Texto Motivacional -->
+  <section class="motivacional">
+    <div class="container motivacional-content">
+      <div>
+        <h2>Continue estudando!</h2>
+        <p>Não desista! Aprender é um processo.</p>
+        <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html"><button>Saiba Mais</button></a>
+      </div>
+      <img src="/Images/Indice-sejusc.png" alt="Motivacional">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CursosFáceis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
