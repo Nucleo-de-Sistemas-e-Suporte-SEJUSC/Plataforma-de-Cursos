@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Configurações</title>
+  <script src="Barralateral.js" defer></script>
+  <link rel="stylesheet" href="configurações.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <barra-lateral></barra-lateral>
+
+    <main class="content">
+      <h1>Configurações da Conta</h1>
+      <a href="usuario.html" class="nav-button">← Voltar para a página de cursos</a>
+      <div class="button-container">
+      </div>
+
+      <div class="settings-section">
+        <h2>Atualizar Informações</h2>
+        <form>
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="Seu nome" />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Seu e-mail" />
+
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+
+      <div class="settings-section">
+        <h2>Alterar Senha</h2>
+        <form>
+          <label for="current-password">Senha Atual</label>
+          <input type="password" id="current-password" placeholder="Senha atual" />
+
+          <label for="new-password">Nova Senha</label>
+          <input type="password" id="new-password" placeholder="Nova senha" />
+
+          <label for="confirm-password">Confirmar Nova Senha</label>
+          <input type="password" id="confirm-password" placeholder="Confirme a nova senha" />
+
+          <button type="submit">Alterar Senha</button>
+        </form>
+      </div>
+
+      <div class="settings-section">
+        <h2>Preferências</h2>
+        <label>
+          <input type="checkbox" id="dark-mode" />
+          Ativar modo escuro
+        </label>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

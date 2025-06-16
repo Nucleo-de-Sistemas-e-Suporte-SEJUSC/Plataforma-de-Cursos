@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Área do Usuário</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1644;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .user-container {
+      background: #2b2246;
+      padding: 30px 40px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 20px #ffffff1a;
+      text-align: center;
+    }
+
+    .user-container h1 {
+      margin-bottom: 30px;
+    }
+
+    .user-info {
+      text-align: left;
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .user-info strong {
+      color: #ccc;
+    }
+
+    .logout-button {
+      padding: 10px 20px;
+      background: linear-gradient(to right, #ffffff, #c4c4c4);
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .logout-button:hover {
+      background: linear-gradient(to right, #ddd, #aaa);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="user-container">
+    <h1>Bem-vindo(a), Kevin!</h1>
+
+    <div class="user-info">
+      <p><strong>Nome:</strong> Kevin de Bruyne</p>
+      <p><strong>E-mail:</strong> Bruyne@gmail.com</p>
+      <p><strong></strong></p>
+      <p><strong>Status:</strong> Ativo</p>
+    </div>
+
+    <button class="logout-button">Sair</button>
+  </div>
+
+</body>
+</html>
