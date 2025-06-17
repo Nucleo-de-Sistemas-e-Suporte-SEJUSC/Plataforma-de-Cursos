@@ -103,15 +103,6 @@ Todo o código da nossa aplicação vive aqui.
     nodemon: Ferramenta de desenvolvimento que monitora as alterações nos arquivos do projeto. Assim que você salva um arquivo, ele reinicia o servidor automaticamente, economizando muito tempo durante o desenvolvimento.
 
 
-
-
-
-
-    Ótima pergunta! Ter uma base funcional é o primeiro passo, mas saber como crescer a partir dela é o que transforma um protótipo em um projeto completo.
-
-Aqui está um guia sobre como sua amiga pode escalar e finalizar o backend, conectando-o com o frontend e adicionando as funcionalidades que faltam.
-Próximos Passos para Evoluir e Escalar o Backend
-
 Estes passos estão organizados de forma lógica, do mais imediato ao mais avançado.
 Passo 1: Conectar o Frontend com o Backend
 
