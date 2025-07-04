@@ -8,31 +8,28 @@
 </head>
 <body>
 
-    <!-- Header -->
-  <header>
+    <header>
   <div class="container">
-    <!-- LOGO -->
     <div class="logo">
-      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">
-        <img src="/Images/sicad.png" alt="Logo do site" class="sicad">
+      <a href="../homepage/index.html">
+        <img src="../../../Images/sicad.png" alt="Logo do site" class="sicad">
       </a>
     </div>
 
-    <!-- LINKS CENTRALIZADOS -->
     <nav class="nav-center">
-      <a href="http://127.0.0.1:3000/Site curso/homepage/index.html">Home</a>
-      <a href="http://127.0.0.1:3000/Site curso/searchpage/index2.html">Cursos</a>
-      <a href="http://127.0.0.1:3000/Site curso/SobrePage/index4.html">Sobre</a>
+      <a href="../homepage/index.html">Home</a>
+      <a href="../searchpage/index2.html">Cursos</a>
+      <a href="index4.html">Sobre</a>
     </nav>
 
-    <!-- USUÁRIO -->
     <div class="user-menu">
       <div class="user-name" onclick="toggleDropdown()">
         <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ícone do usuário" class="user-icon">
         <span>Olá, Maria</span>
       </div>
       <div class="dropdown" id="dropdown">
-        <a href="#" onclick="logout(); return false;">Logout</a>
+         <a href="../../../configurações/ContaUsuario.html">Perfil</a>
+        <a href="../../../LoginUsuario/login.html">Logout</a>
       </div>
     </div>
   </div>
@@ -47,18 +44,16 @@ Nosso compromisso é promover o aprimoramento contínuo por meio de conteúdos a
     </div>
     </div>
 
-     <!-- Texto Motivacional -->
-  <section class="motivacional">
+     <section class="motivacional">
     <div class="container motivacional-content">
       <div>
         <h2>Continue estudando!</h2>
         <p>Não desista! Aprender é um processo.</p>
       </div>
-      <img src="/Images/Indice-sejusc.png" alt="Motivacional">
+      <img src="../../Images/Indice-sejusc.png" alt="Motivacional">
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 CursosFáceis. Todos os direitos reservados.</p>
@@ -67,4 +62,5 @@ Nosso compromisso é promover o aprimoramento contínuo por meio de conteúdos a
 
   </header>
 </body>
+<script src="../homepage/script.js"></script>
 </html>
