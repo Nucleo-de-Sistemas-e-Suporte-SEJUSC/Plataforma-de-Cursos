@@ -54,6 +54,10 @@ header .container {
   cursor: pointer;
 }
 
+h1{
+  margin-bottom: 10px;
+}
+
 .user-name {
   display: flex;
   align-items: center;
