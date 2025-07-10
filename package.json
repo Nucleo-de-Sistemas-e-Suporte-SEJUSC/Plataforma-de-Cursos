@@ -1,0 +1,24 @@
+{
+  "name": "plataforma-de-cursos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "lint:css": "stylelint \"**/*.css\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nucleo-de-Sistemas-e-Suporte-SEJUSC/Plataforma-de-Cursos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nucleo-de-Sistemas-e-Suporte-SEJUSC/Plataforma-de-Cursos/issues"
+  },
+  "homepage": "https://github.com/Nucleo-de-Sistemas-e-Suporte-SEJUSC/Plataforma-de-Cursos#readme",
+  "description": "",
+  "devDependencies": {
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
