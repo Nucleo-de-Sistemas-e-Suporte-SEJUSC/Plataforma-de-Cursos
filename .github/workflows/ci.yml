@@ -1,0 +1,52 @@
+# .github/workflows/ci.yml
+name: Validar e Publicar Frontend
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validar-e-publicar:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 1. Checkout do código
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar o Node.js
+        # Usamos Node.js para rodar ferramentas de qualidade como linters
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 3. Instalar dependências e Linters
+        # Este passo instalará ferramentas como o "stylelint" para validar o CSS.
+        # É preciso ter um package.json na raiz do projeto (veja o Passo 2 abaixo).
+        run: npm install
+
+      - name: 4. Verificar o código CSS com StyleLint
+        # Este comando vai verificar TODOS os arquivos .css no projeto.
+        run: npm run lint:css
+      
+      # Futuramente, quando migrar para React, você adicionará a etapa de build aqui.
+      # - name: 5. Build do projeto React
+      #   run: npm run build
+      
+      - name: 6. Configurar o GitHub Pages
+        if: github.ref == 'refs/heads/main' # Só executa na branch main
+        uses: actions/configure-pages@v5
+
+      - name: 7. Subir artefato para o GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Publica TODO o conteúdo do repositório a partir da raiz
+          path: '.'
+
+      - name: 8. Fazer Deploy no GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        id: deployment
+        uses: actions/deploy-pages@v4
