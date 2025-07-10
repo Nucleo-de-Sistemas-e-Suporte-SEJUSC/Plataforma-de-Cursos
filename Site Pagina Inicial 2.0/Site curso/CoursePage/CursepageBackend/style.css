@@ -230,3 +230,6 @@ body {
   max-height: 60px; /* controla a altura */
   width: auto; /* mantém a proporção */
 }
+h1{
+  margin-bottom: 10px;
+}
