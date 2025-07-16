@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.sobre {
+  background-color: #fff;
+}
+
+.Texto {
+  text-align: justify;
+  line-height: 1.6;
+}
+h1 {
+  text-align: center;
+}
+body{
+  background-color: #fff;
+}

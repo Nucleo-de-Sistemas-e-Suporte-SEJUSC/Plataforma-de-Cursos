@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-login {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  min-width: 900px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Lado esquerdo */
+.left-login {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left-login img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.left-login h1 {
+  font-size: 20px;
+  color: #002248;
+  margin-bottom: 10px;
+}
+
+/* Lado direito */
+.right-login {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-login {
+  width: 100%;
+}
+
+.form-legend {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #002248;
+  text-align: center;
+}
+
+.textfield {
+  margin-bottom: 16px;
+}
+
+.textfield label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.textfield input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #eee;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #002248;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #001a36;
+}
+
+.register-link {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.register-link a {
+  color: #002248;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+input {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #ccc !important;
+}
