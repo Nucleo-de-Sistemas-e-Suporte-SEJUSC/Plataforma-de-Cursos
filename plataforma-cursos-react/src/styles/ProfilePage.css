@@ -1,7 +1,9 @@
 /* src/styles/ProfilePage.css */
 
 .profile-container {
+  min-width: 800px;
   max-width: 800px;
+  min-height: 600px;
   margin: 40px auto;
   padding: 24px;
   background: white;
@@ -23,11 +25,34 @@
   box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
 }
 
+.card-cursos{
+  min-height: 350px;
+  max-height: 350px;
+}
+
 .card-dados h3 {
   font-size: 1.1rem;
   color: #1f2f5d;
   margin-bottom: 8px;
 }
+
+/* Botão de cancelar matrícula */
+.cancelar-btn {
+  background-color: #dc2626; /* vermelho */
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cancelar-btn:hover {
+  background-color: #b91c1c;
+}
+
 
 .card-dados p {
   margin: 4px 0;
@@ -61,11 +86,15 @@
   overflow-x: auto;
   padding: 8px 0;
   scroll-behavior: smooth;
+  min-width: 700px;
+  min-height: 200px;
 }
 
 .curso-card {
-  width: 140px;
-  height: 100px;
+  max-width: 150px;
+  max-height: 220px;
+  min-width: 150px;
+  min-height: 220px;
   background-color: #1f2f5d;
   border-radius: 12px;
   padding: 8px;
@@ -111,3 +140,4 @@
   text-decoration: none;
   font-weight: 500;
 }
+

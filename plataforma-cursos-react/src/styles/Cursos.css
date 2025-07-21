@@ -36,6 +36,39 @@ a {
   text-decoration: none;
 }
 
+.matricular-btn {
+  background-color: #1f2f5d;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.matricular-btn:hover {
+  background-color: #16305c;
+}
+
+.cancelar-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.cancelar-btn:hover {
+  background-color: #b91c1c;
+}
+
+
 /* Menu */
 .menu {
   list-style: none;

@@ -1,12 +1,16 @@
+// src/pages/ProfilePage.jsx
 import React, { useState, useEffect } from 'react';
 import '../styles/ProfilePage.css';
 import { Link } from 'react-router-dom';
+import coursesData from '../data/coursesData';
+import ConfirmDialog from '../components/ConfirmDialog'; // import novo
 
 export default function ProfilePage() {
   const [userData, setUserData] = useState({});
   const [meusCursos, setMeusCursos] = useState([]);
+  const [confirmOpen, setConfirmOpen] = useState(false);
+  const [cursoSelecionado, setCursoSelecionado] = useState(null);
 
-  // Carrega os dados do usuário e cursos ao montar
   useEffect(() => {
     const savedUser = JSON.parse(localStorage.getItem('usuarioLogado'));
     setUserData(savedUser || {
@@ -15,14 +19,29 @@ export default function ProfilePage() {
       telefone: '(00) 00000-0000'
     });
 
-    // Cursos simulados
-    const fakeCursos = [
-      { id: 1, dataInicio: '01/07', status: 'finalizado' },
-      { id: 2, dataInicio: '10/07', status: 'andamento' },
-      { id: 3, dataInicio: '15/07', status: 'pendente' },
-    ];
-    setMeusCursos(fakeCursos);
+    atualizarCursos();
   }, []);
+
+  const atualizarCursos = () => {
+    const cursosMatriculados = JSON.parse(localStorage.getItem('cursosMatriculados')) || [];
+    const cursosUsuario = coursesData.filter(course =>
+      cursosMatriculados.includes(course.id)
+    );
+    setMeusCursos(cursosUsuario);
+  };
+
+  const solicitarCancelamento = (courseId) => {
+    setCursoSelecionado(courseId);
+    setConfirmOpen(true);
+  };
+
+  const confirmarCancelamento = () => {
+    const cursosMatriculados = JSON.parse(localStorage.getItem('cursosMatriculados')) || [];
+    const atualizados = cursosMatriculados.filter(id => id !== cursoSelecionado);
+    localStorage.setItem('cursosMatriculados', JSON.stringify(atualizados));
+    atualizarCursos();
+    setConfirmOpen(false);
+  };
 
   return (
     <div className="profile-container">
@@ -39,22 +58,35 @@ export default function ProfilePage() {
         <h3>Meus Cursos</h3>
         <div className="carousel-wrapper">
           <div className="curso-carousel">
-            {meusCursos.map((curso) => (
-              <div key={curso.id} className="curso-card">
-                <span className="data">Início: {curso.dataInicio}</span>
-                <span className={`status ${curso.status}`}>
-                  {curso.status === 'finalizado' && 'Finalizado'}
-                  {curso.status === 'andamento' && 'Em andamento'}
-                  {curso.status === 'pendente' && 'Pendente'}
-                </span>
-              </div>
-            ))}
+            {meusCursos.length > 0 ? (
+              meusCursos.map((curso) => (
+                <div key={curso.id} className="curso-card">
+                  <img src={curso.imgSrc} alt={curso.title} />
+                  <h4>{curso.title}</h4>
+                  <p>{curso.description}</p>
+                  <button
+                    className="cancelar-btn"
+                    onClick={() => solicitarCancelamento(curso.id)}
+                  >
+                    Cancelar matrícula
+                  </button>
+                </div>
+              ))
+            ) : (
+              <p>Você ainda não está matriculado em nenhum curso.</p>
+            )}
           </div>
         </div>
       </div>
 
       <Link to="/" className="voltar-btn">Voltar para a Página Inicial</Link>
+
+      <ConfirmDialog
+        isOpen={confirmOpen}
+        onConfirm={confirmarCancelamento}
+        onCancel={() => setConfirmOpen(false)}
+        message="Tem certeza que deseja cancelar esta matrícula?"
+      />
     </div>
   );
 }
-

@@ -19,8 +19,6 @@ body {
   margin: auto;
 }
 
-
-
 /* Hero Carousel */
 .hero-carousel {
   position: relative;
@@ -33,93 +31,44 @@ body {
   width: 100%;
 }
 
-.hero-slide {
-  display: none;
-  padding: 20px 0;
-}
-
-.hero-slide.active {
-  display: block;
-}
-
-.hero-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-.hero-text h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  margin-bottom: 20px;
-  color: #555;
-}
-
-.hero-text button {
-  background-color: #002248;
+/* Botões de matrícula */
+.matricular-btn {
+  background-color: #1f2f5d;
   color: white;
-  padding: 10px 20px;
+  padding: 6px 12px;
+  margin-top: 8px;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #001a36;
-}
-
-.hero-image img {
+  border-radius: 6px;
   width: 100%;
-  max-width: 400px;
-}
-
-.iconbanner {
-  width: auto;
-  max-height: 200px;
-}
-
-/* Botões de seta */
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.4);
-  color: white;
-  border: none;
-  padding: 12px;
   cursor: pointer;
-  font-size: 24px;
-  z-index: 10;
-  border-radius: 50%;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
 }
 
-.carousel-btn.prev {
-  left: 10px;
+.matricular-btn:hover {
+  background-color: #16305c;
 }
 
-.carousel-btn.next {
-  right: 10px;
+.cancelar-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
 }
 
-.carousel-btn:hover {
-  background-color: rgba(0,0,0,0.6);
+.cancelar-btn:hover {
+  background-color: #b91c1c;
 }
-
 
 /* Categorias */
 .categorias {
   padding: 40px 0;
-}
-
-.categorias h2 {
-  margin-bottom: 20px;
 }
 
 .botoes-categorias {
@@ -128,7 +77,7 @@ body {
   flex-wrap: wrap;
 }
 
-.botoes-categorias{
+.botoes-categorias button {
   background-color: #f1f5f9;
   border: none;
   padding: 8px 16px;
@@ -144,7 +93,6 @@ body {
 /* Cursos */
 .cursos {
   padding: 40px 0;
-  flex: auto;
   background-color: #FFFFFF;
 }
 
@@ -207,7 +155,7 @@ body {
 }
 
 .motivacional-content button:hover {
-  background-color: #002248;
+  background-color: #001a36;
 }
 
 .motivacional-content img {
@@ -223,142 +171,8 @@ footer {
   border-top: 1px solid #e5e7eb;
 }
 
-a{
-    color: black;
-    text-decoration: none
-}
-
-.card a {
+a {
+  color: black;
   text-decoration: none;
-  color: inherit;
-  display: block;
 }
-
-.sicad {
-  max-height: 60px; /* controla a altura */
-  width: auto; /* mantém a proporção */
-}
-
-.iconbanner{
-  width: auto;
-  max-height: 200px;
-}
-.carousel-btn {
-  background-color: #002248; /* azul escuro */
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 10;
-  padding: 0; /* importante */
-
-}
-
-.carousel-btn:hover {
-  background-color: #002248;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.carousel-btn.prev {
-  left: 10px;
-}
-
-.carousel-btn.next {
-  right: 10px;
-}
-
-/* Header */
-header {
-  background-color: white;
-  padding: 20px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-header nav {
-  display: flex;
-  gap: 20px;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.user-menu {
-  position: relative;
-  cursor: pointer;
-}
-
-.user-name {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 12px;
-  background-color: #f3f4f6;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-.user-name:hover {
-  background-color: #e5e7eb;
-}
-
-.user-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 48px;
-  background-color: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-radius: 6px;
-  overflow: hidden;
-  z-index: 100;
-}
-
-.dropdown a {
-  display: block;
-  padding: 10px 16px;
-  text-decoration: none;
-  color: #333;
-  transition: background-color 0.2s;
-}
-
-.dropdown a:hover {
-  background-color: #f0f0f0;
-}
-
 
