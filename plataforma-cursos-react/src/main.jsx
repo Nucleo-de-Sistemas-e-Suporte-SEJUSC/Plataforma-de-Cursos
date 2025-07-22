@@ -18,6 +18,7 @@ import Gestao from "./pages/PagesCourses/Gestao.jsx";
 import Python from "./pages/PagesCourses/Python.jsx";
 import Redes from "./pages/PagesCourses/Redes.jsx";
 import Educacao from "./pages/PagesCourses/Educacao.jsx";
+import Equipe from "./pages/Equipe.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -32,6 +33,8 @@ createRoot(document.getElementById("root")).render(
          <Route path="/cursos" element={<Cursos />} />
          <Route path="/Config" element={<Config />} />
          <Route path="/Profile" element={<Profile />} />
+         <Route path="/Equipe" element={<Equipe />} />
+
 
          <Route path="/Costura" element={<Costura />} />
          <Route path="/Ambiente" element={<Ambiente />} />
