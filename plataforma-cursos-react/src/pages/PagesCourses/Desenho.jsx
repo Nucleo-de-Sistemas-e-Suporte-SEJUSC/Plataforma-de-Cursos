@@ -1,4 +1,5 @@
 import CoursePage from '../../components/CoursePage';
+import Video from '../../assets/Videos/Desenho.mp4';
 
 export default function CursoCostura() {
   const sections = [
@@ -22,7 +23,7 @@ export default function CursoCostura() {
     <CoursePage
       title="Artes e Criatividade: Desenho e Pintura"
       description="Desenvolva sua expressão artística com técnicas básicas de desenho e pintura. Ideal para crianças e iniciantes no mundo das artes."
-      videoUrl="https://www.youtube.com/embed/RgkB7Gfh1n0"
+      videoUrl={Video}
       category="Tag/Categoria"
       duration="2h 15min"
       audience="Iniciantes e interessados"

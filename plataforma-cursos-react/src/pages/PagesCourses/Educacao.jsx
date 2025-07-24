@@ -1,4 +1,5 @@
 import CoursePage from '../../components/CoursePage';
+import Video from '../../assets/Videos/Educacao.mp4';
 
 export default function CursoCostura() {
   const sections = [
@@ -22,7 +23,7 @@ export default function CursoCostura() {
     <CoursePage
        title="Aprendendo com Jogos: Educação Infantil Interativa"
       description="Curso lúdico que ensina como usar jogos digitais e analógicos como ferramentas de aprendizagem para o desenvolvimento infantil."
-      videoUrl="https://www.youtube.com/embed/RgkB7Gfh1n0"
+      videoUrl={Video}
       category="Tag/Categoria"
       duration="2h 15min"
       audience="Iniciantes e interessados"

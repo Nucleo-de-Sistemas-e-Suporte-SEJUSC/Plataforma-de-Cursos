@@ -1,5 +1,5 @@
 import CoursePage from '../../components/CoursePage';
-import Video from '../../assets/Videos/GESTAO.mp4';
+import Video from '../../assets/Videos/Gestao.mp4';
 
 export default function CursoCostura() {
   const sections = [

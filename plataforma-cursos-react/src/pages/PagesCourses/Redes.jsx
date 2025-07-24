@@ -1,5 +1,5 @@
 import CoursePage from '../../components/CoursePage';
-
+import Video from '../../assets/Videos/Redes.mp4';
 export default function CursoCostura() {
   const sections = [
     {
@@ -22,7 +22,7 @@ export default function CursoCostura() {
     <CoursePage
       title="Redes do Zero"
       description="Ideal para iniciantes, este curso ensina desde os conceitos básicos de redes até a configuração de equipamentos, protocolos e segurança da informação."
-      videoUrl="https://www.youtube.com/embed/RgkB7Gfh1n0"
+      videoUrl={Video}
       category="Tag/Categoria"
       duration="2h 15min"
       audience="Iniciantes e interessados"

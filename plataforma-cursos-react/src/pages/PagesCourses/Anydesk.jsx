@@ -1,4 +1,5 @@
 import CoursePage from '../../components/CoursePage';
+import Video from '../../assets/Videos/Anydesk.mp4';
 
 export default function CursoCostura() {
   const sections = [
@@ -22,7 +23,7 @@ export default function CursoCostura() {
     <CoursePage
       title="Como instalar o Anydesk"
       description="Um guia prático e direto ao ponto sobre como instalar, configurar e utilizar o Anydesk para acesso remoto com segurança e eficiência."
-      videoUrl="https://www.youtube.com/embed/RgkB7Gfh1n0"
+      videoUrl={Video}
       category="Tag/Categoria"
       duration="2h 15min"
       audience="Iniciantes e interessados"

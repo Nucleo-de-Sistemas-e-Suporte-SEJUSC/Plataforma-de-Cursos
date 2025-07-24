@@ -1,4 +1,5 @@
 import CoursePage from '../../components/CoursePage';
+import Video from '../../assets/Videos/Python.mp4';
 
 export default function CursoCostura() {
   const sections = [
@@ -22,7 +23,7 @@ export default function CursoCostura() {
     <CoursePage
       title="Back-end em Python"
       description="Aprenda a desenvolver aplicações robustas utilizando Python. Este curso aborda fundamentos de lógica, estruturas de dados, APIs e integração com bancos de dados."
-      videoUrl="https://www.youtube.com/embed/RgkB7Gfh1n0"
+      videoUrl={Video}
       category="Tag/Categoria"
       duration="2h 15min"
       audience="Iniciantes e interessados"
