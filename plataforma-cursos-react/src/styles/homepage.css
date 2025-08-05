@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #333;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 1200px;
+  margin: auto;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+  background-color: #eef2ff;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Botões de matrícula */
+.matricular-btn {
+  background-color: #1f2f5d;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.matricular-btn:hover {
+  background-color: #16305c;
+}
+
+.cancelar-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.cancelar-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Categorias */
+.categorias {
+  padding: 40px 0;
+}
+
+.botoes-categorias {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botoes-categorias button {
+  background-color: #f1f5f9;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botoes-categorias button:hover {
+  background-color: #c7d2fe;
+}
+
+/* Cursos */
+.cursos {
+  padding: 40px 0;
+  background-color: #FFFFFF;
+}
+
+.grid-cursos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h3 {
+  margin: 10px;
+}
+
+.card p {
+  margin: 0 10px 10px;
+  color: #666;
+}
+
+/* Motivacional */
+.motivacional {
+  background-color: #eef2ff;
+  padding: 40px 0;
+}
+
+.motivacional-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.motivacional-content h2 {
+  margin-bottom: 10px;
+}
+
+.motivacional-content p {
+  margin-bottom: 20px;
+}
+
+.motivacional-content button {
+  background-color: #002248;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.motivacional-content button:hover {
+  background-color: #001a36;
+}
+
+.motivacional-content img {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
